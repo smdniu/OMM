@@ -1,0 +1,596 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+	String path = request.getContextPath();
+%>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jvmcache应用</title>
+		<meta name="viewport"
+			content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+		<link href="<%=path%>/biz/css/base.css" rel="stylesheet" type="text/css">
+		<link href="<%=path%>/biz/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<script src="<%=path%>/biz/js/jquery-1.11.1.min.js">
+</script>
+	</head>
+	<body>
+		<!--jvmcache应用内容区-->
+		<div class="jvmcache_cont" >
+			<!--顶部查询条件-->
+			<div class="inqurie_bot">
+				<div class="select_boss">
+					<select class="select_01">
+						<option value="1">
+							缓存信息查询
+						</option>
+						<option value="2">
+							服务缓存信息查询
+						</option>
+					</select>
+				</div>
+				<div class="select_boss" style="width: 20%;">
+					<select class="select_01" style="width: 95%;">
+						<c:forEach items="${jvmcache}" var="data">
+							<option value="${data.code}">${data.name}</option>
+						</c:forEach>
+					</select>
+				</div>
+				<div class="select_boss" style="width: 25%;">
+					<select class="select_01" style="width: 100%;">
+						<c:forEach items="${jvmCacheIpPorts}" var="data">
+							<option value="${data}">${data}</option>
+						</c:forEach>
+					</select>
+				</div>
+				<!--input输入框-->
+				<div class="select_boss" style="width: 20%;">
+					<input class="input_01" type="text" placeholder=" 缓存key值/服务治理编码">
+				</div>
+				<!--按钮-->
+				<div class="select_boss" style="float: right;">
+					<input class="input_02" type="button" value="查询缓存">
+					<input class="input_02" type="button" value="更新缓存">
+				</div>
+			</div>
+			<!--内容-->
+			<div class="conten_jvmcache">
+				<!--左边-->
+				<div class="left_jvmcache">
+					<!--上部tab-->
+					<div class="bule-top">
+						<div class="tabs">
+							<div class="tab-01">
+								缓存
+							</div>
+							<i class="fa fa-close"></i>
+						</div>
+					</div>
+					<!--xiabu-->
+					<div class="jvmc_table">
+						<table class="table_01">
+							<tboby>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr><tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+							<tr>
+								<td>
+									缓存KRY值
+								</td>
+								<td>
+									进程名称
+								</td>
+								<td>
+									真实IP地址
+								</td>
+							</tr>
+
+							</tboby>
+						</table>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="right_jvmcache">
+					<!--上部tab-->
+					<div class="bule-top">
+						<div class="tabs">
+							<div class="tab-01">
+								缓存
+							</div>
+							<i class="fa fa-close"></i>
+						</div>
+						<div class="tabs">
+							<div class="tab-01">
+								缓存
+							</div>
+							<i class="fa fa-close"></i>
+						</div>
+						<div class="tabs">
+							<div class="tab-01">
+								缓存
+							</div>
+							<i class="fa fa-close"></i>
+						</div>
+						<div class="tabs">
+							<div class="tab-01">
+								缓存
+							</div>
+							<i class="fa fa-close"></i>
+						</div>
+
+					</div>
+					<!--xiabu-->
+					<div class="jvmc_text">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script>
+</script>
+</html>

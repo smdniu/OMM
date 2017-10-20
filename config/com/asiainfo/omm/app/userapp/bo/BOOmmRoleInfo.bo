@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base_aiop" name="BOOmmRoleInfo" mainattr="ID">
+    <mapingenty type="table">OMM_ROLE_INFO</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="10" datatype="Long" type="PK" remark="编号">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NAME" maxlength="48" datatype="String" type="COL" remark="名称">
+        <mapingcol datatype="VARCHAR2">NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="2" datatype="String" type="COL" remark="状态">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="更新时间">
+        <mapingcol datatype="DATE">UPDATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXPIRY_TIME" maxlength="20" datatype="DateTime" type="COL" remark="失效时间">
+        <mapingcol datatype="DATE">EXPIRY_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="24" datatype="String" type="COL" remark="扩展字段一">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="32" datatype="String" type="COL" remark="扩展字段二">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="64" datatype="String" type="COL" remark="扩展字段三">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="64" datatype="String" type="COL" remark="备注">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLE_CODE" maxlength="48" datatype="String" type="COL" remark="角色id">
+        <mapingcol datatype="VARCHAR2">ROLE_CODE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base_aiop" name="BOOmmLog" mainattr="ID">
+    <mapingenty type="table">OMM_LOG</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="10" datatype="Long" type="PK" remark="ID">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SESSION_ID" maxlength="256" datatype="String" type="COL" remark="sessionid">
+        <mapingcol datatype="VARCHAR2">SESSION_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCOUNT" maxlength="24" datatype="String" type="COL" remark="登录账号">
+        <mapingcol datatype="VARCHAR2">ACCOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NAME" maxlength="64" datatype="String" type="COL" remark="用户名">
+        <mapingcol datatype="VARCHAR2">NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATHNAME" maxlength="64" datatype="String" type="COL" remark="访问路径名">
+        <mapingcol datatype="VARCHAR2">PATHNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATH" maxlength="256" datatype="String" type="COL" remark="访问路径">
+        <mapingcol datatype="VARCHAR2">PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOTIME" maxlength="20" datatype="DateTime" type="COL" remark="操作时间">
+        <mapingcol datatype="TIMESTAMP(6)">DOTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUEST_IP" maxlength="64" datatype="String" type="COL" remark="请求ip">
+        <mapingcol datatype="VARCHAR2">REQUEST_IP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVICE_IP" maxlength="64" datatype="String" type="COL" remark="服务ip">
+        <mapingcol datatype="VARCHAR2">SERVICE_IP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="256" datatype="String" type="COL" remark="拓展字段1">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="256" datatype="String" type="COL" remark="拓展字段2">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="256" datatype="String" type="COL" remark="拓展字段3">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CODE" maxlength="10" datatype="String" type="COL" remark="返回编码">
+        <mapingcol datatype="VARCHAR2">CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MSG" maxlength="64" datatype="String" type="COL" remark="返回信息">
+        <mapingcol datatype="VARCHAR2">MSG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="64" datatype="String" type="COL" remark="备注">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOG_DATE" maxlength="20" datatype="DateTime" type="COL" remark="日志记录时间">
+        <mapingcol datatype="TIMESTAMP(6)">LOG_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUES_PARAM" maxlength="4000" datatype="String" type="COL" remark="请求参数">
+        <mapingcol datatype="VARCHAR2">REQUES_PARAM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOG_TYPE" maxlength="10" datatype="String" type="COL" remark="日志类型">
+        <mapingcol datatype="VARCHAR2">LOG_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

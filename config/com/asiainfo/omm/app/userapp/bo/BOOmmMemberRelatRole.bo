@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base_aiop" name="BOOmmMemberRelatRole" mainattr="ID">
+    <mapingenty type="table">OMM_MEMBER_RELAT_ROLE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="10" datatype="Long" type="PK" remark="编号">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEMBER_ID" maxlength="24" datatype="String" type="COL" remark="人员编号">
+        <mapingcol datatype="VARCHAR2">MEMBER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLEID" maxlength="24" datatype="String" type="COL" remark="角色编号">
+        <mapingcol datatype="VARCHAR2">ROLEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="2" datatype="String" type="COL" remark="状态">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="更新时间">
+        <mapingcol datatype="DATE">UPDATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXPIRY_TIME" maxlength="20" datatype="DateTime" type="COL" remark="更新时间">
+        <mapingcol datatype="DATE">EXPIRY_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="24" datatype="String" type="COL" remark="扩展字段一">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="32" datatype="String" type="COL" remark="扩展字段二">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="64" datatype="String" type="COL" remark="扩展字段三">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="64" datatype="String" type="COL" remark="备注">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

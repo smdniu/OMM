@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaults>
+    <center>
+    </center>
+    <proxy invoke="pojo" type="primitive">
+        <clazz name="com.ai.appframe2.complex.service.impl.LocalServiceInvokeImpl"/>
+    </proxy>
+    <transaction type="Required">
+        <clazz name="com.ai.appframe2.complex.transaction.impl.LocalMutilTransactionImpl"/>
+        <mapping>
+            <property name="com.ai.appframe2.complex.self.service.base" value="base"/>
+            <property name="com.ai.appframe2.complex.self.service.check" value="base"/>
+            <property name="com.asiainfo.omm.app" value="base_aiop"/>
+        </mapping>
+    </transaction>
+    <datasource>
+        <clazz name="com.asiainfo.omm.app.db.OmmMutilDataSourceImpl">
+            <property name="tableName" value="cfg_db_acct"/>
+        </clazz>
+        <pool name="base_aiop" primary="true" type="SELF" db="ORACLE">
+            <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+            <property name="url" value="jdbc:oracle:thin:@10.218.34.26:1521:KFCS"/>
+            <property name="username" value="base_aiop"/>
+            <property name="password" value="1qaz!QAZ"/>
+            <property name="initialSize" value="0"/>
+            <property name="maxActive" value="2"/>
+            <property name="maxIdle" value="2"/>
+        </pool>
+        <pool name="base" type="SELF" db="ORACLE">
+            <property name="initialSize" value="0"/>
+            <property name="maxActive" value="2"/>
+            <property name="maxIdle" value="2"/>
+        </pool>
+        <mapping>
+            <property name="com.ai.appframe2.complex.self.dao.base" value="base"/>
+            <property name="com.ai.appframe2.complex.self.service.check" value="base"/>
+            <property name="com.asiainfo.omm.app" value="base_aiop"/>
+        </mapping>
+    </datasource>
+</defaults>

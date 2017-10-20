@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base_aiop" name="BOOmmMember" mainattr="ID">
+    <mapingenty type="table">OMM_MEMBER</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="10" datatype="Long" type="PK" remark="编号">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCOUNT" maxlength="24" datatype="String" type="COL" remark="账号">
+        <mapingcol datatype="VARCHAR2">ACCOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NAME" maxlength="24" datatype="String" type="COL" remark="姓名">
+        <mapingcol datatype="VARCHAR2">NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PASSWORD" maxlength="64" datatype="String" type="COL" remark="密码">
+        <mapingcol datatype="VARCHAR2">PASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPT" maxlength="32" datatype="String" type="COL" remark="部门">
+        <mapingcol datatype="VARCHAR2">DEPT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="12" datatype="String" type="COL" remark="电话">
+        <mapingcol datatype="VARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="128" datatype="String" type="COL" remark="邮箱">
+        <mapingcol datatype="VARCHAR2">EMAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IP_ADDRESS" maxlength="200" datatype="String" type="COL" remark="IP地址">
+        <mapingcol datatype="VARCHAR2">IP_ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="更新时间">
+        <mapingcol datatype="DATE">UPDATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXPIRY_TIME" maxlength="20" datatype="DateTime" type="COL" remark="失效时间">
+        <mapingcol datatype="DATE">EXPIRY_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="2" datatype="String" type="COL" remark="状态">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="24" datatype="String" type="COL" remark="扩展字段一">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="32" datatype="String" type="COL" remark="扩展字段二">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="64" datatype="String" type="COL" remark="扩展字段三">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="64" datatype="String" type="COL" remark="备注">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ENCRYPT_TYPE" maxlength="2" datatype="String" type="COL" remark="加密方式: 0-NOT, 1-MD5">
+        <mapingcol datatype="VARCHAR2">ENCRYPT_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

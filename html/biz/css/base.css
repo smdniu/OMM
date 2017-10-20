@@ -1,0 +1,841 @@
+@charset "utf-8";
+/* CSS Document */
+	*{ box-sizing:border-box;}
+	body { width:100%;height:100%; margin:0; padding:0; list-style:none; font-size:16%;font-style:normal; font-family:helvetica,simhei; color:#333; overflow:hidden; background:#f6f6f6;cursor:default;}
+	a,img,span,i,ul,li,p,input,select,textarea{ margin:0; padding:0; list-style:none;display:block; text-decoration:none; font-family:helvetica,simhei; color:#333;}
+	input[type="date"]{ line-height:1.5 !important; padding:0.075rem 0.1rem !important; background-color:transparent !important;}
+	@media (min-width:0px ) and (max-width:320px) { html { font-size: 30px;}}
+	@media (min-width:320px ) and (max-width:360px) { html { font-size: 42.66px;}}
+	@media (min-width:360px ) and (max-width:400px) { html { font-size: 48px;}}
+	@media (min-width:400px ) and (max-width:440px) { html { font-size: 53.33px;}}
+	@media (min-width:440px ) and (max-width:480px) { html { font-size: 58.66px;}}
+	@media (min-width:480px ) and (max-width:540px) { html { font-size:64px;}}
+	@media (min-width:540px ) and (max-width:580px) { html { font-size:72px;}}
+	@media (min-width:580px ) and (max-width:640px) { html { font-size:77.33px;}}
+	@media (min-width:640px ) and (max-width:680px) { html { font-size:85.33px;}}
+	@media (min-width:680px ) and (max-width:720px) { html { font-size:90.66px;}}
+	@media (min-width:720px ) and (max-width:750px) { html { font-size:96px;}}
+	@media (min-width:750px ) and (max-width:800px) { html { font-size:100px;}}
+	@media (min-width:800px ) and (max-width:850px) { html { font-size:106.66px;}}
+	@media (min-width:850px ) and (max-width:900px) { html { font-size:113.33px;}}
+	@media (min-width:900px ) and (max-width:950px) { html { font-size:120px;}}
+	@media (min-width:950px ) and (max-width:1024px) { html { font-size:126.66px;}}
+	@media (min-width:1024px ) and (max-width:1080px) { html { font-size:136.53px;}}
+	@media (min-width:1080px ) and (max-width:1200px) { html { font-size:144px;}}
+	@media (min-width:1200px ) and (max-width:1240px) { html { font-size:160px;}}
+	@media (min-width:1240px ) and (max-width:1280px){ html { font-size:165.33px;}}
+	@media (min-width:1280px ) and (max-width:1334px) { html { font-size:170.66px;}}
+	@media (min-width:1334px ) and (max-width:1400px) { html { font-size:177.86px;}}
+	@media (min-width:1400px ) and (max-width:1450px) { html { font-size:186.66px;}}
+	@media (min-width:1450px ) and (max-width:1500px) { html { font-size:193.33px;}}
+	@media (min-width:1500px ) and (max-width:1536px) { html { font-size:200px;}}
+	@media (min-width:1536px ) and (max-width:1600px) { html { font-size:204.8px;}}
+	@media (min-width:1600px ) and (max-width:1650px) { html { font-size:213.33px;}}
+	@media (min-width:1650px ) and (max-width:1700px) { html { font-size:220px;}}
+	@media (min-width:1700px ) and (max-width:1750px) { html { font-size:226.66px;}}
+	@media (min-width:1750px ) and (max-width:1800px) { html { font-size:233.33px;}}
+	@media (min-width:1800px ) and (max-width:1850px) { html { font-size:240px;}}
+	@media (min-width:1850px ) and (max-width:1920px) { html { font-size:246.66px;}}
+	@media (min-width:1920px ) and (max-width:2000px) { html { font-size:256px;}}
+	@media (min-width:2000px ) and (max-width:2048px) { html { font-size:266.66px;}}
+	@media (min-width:2048px ) and (max-width:2560px) { html { font-size:273.06px;}}
+	@media (min-width:2560px) { html { font-size:341.33px;}}
+
+/* 清除浮动 */
+.m_nav,
+.m_nav .logo:after,
+.m_nav .middle:after,
+.tab_nav li:after,
+.index_cont ul:after,
+.login_page .content .log_box li:after,
+.login_page .content .log_box .operate:after,
+.login_page .content .log_box .title:after,
+/* 用户管理导航栏 */
+.user_manage_cont .nav:after,
+/* 上一页、下一页 */
+.up_down_page:after,
+/* 数据库页面侧边栏 */
+.data_page .side_bar li:after,
+/* 数据库页面按钮栏 */
+.page_content .middle:after,
+.page_content .middle > div:after,
+/* 查询条件 */
+.query_condition:after,
+/* 页面标题 */
+.page_title:after,
+/* 用户管理页面-新增弹框内容行 */
+.user_manage_cont .newAdd_bounce .white_bg li:after,
+/* 用户管理页面-新增弹框按钮 */
+.newAdd_bounce .white_bg .btn_box:after,
+/* 文件夹开合 */
+.switch li > div:after,
+/* 应用管理页面-新增应用弹框-memchace内容操作按钮 */
+.operate_btn:after,
+.operate_btn .border:after,
+/* 日志管理标题栏 */
+.log_manage_cont .nav:after{
+	clear:both; content:""; display:block; height:0;
+}
+.clearfix{
+	clear:both; content:""; display:block; height:0;
+}
+/* 左浮动 */
+.float_left{
+	float: left;
+}
+/* 右浮动 */
+.float_right{
+	float: right;
+}
+/* 首页 */
+.m_nav img,
+.m_nav span,
+.m_nav span i,
+.m_nav input,
+.m_nav .search,
+.tab_nav img,
+.tab_nav span,
+.tab_nav li{
+	display: inline-block;float: left;
+}
+/* 顶部标题栏 */
+.m_nav{
+	height: 0.2rem;background-color: #00a0e9;padding: 0 0.1rem;
+}
+.m_nav .logo{
+	float: left;
+}
+.m_nav .middle,
+.m_nav .exit,
+.m_nav .modify_password{
+	float: right;
+}
+.m_nav .logo img{
+	width: 0.2rem;height: 0.12rem;margin: 0.04rem 0;
+}
+.m_nav .logo span{
+	font-size: 0.1rem;color: #fff;line-height: 0.2rem;margin-left: 0.05rem;font-weight: bold;
+}
+.m_nav .middle{
+	margin-right: 0.3rem;
+}
+.m_nav .modify_password,
+.m_nav .middle,
+.m_nav .exit{
+	margin-right: 0.05rem;
+}
+.m_nav .middle img,
+.m_nav .exit img,
+.m_nav .modify_password img{
+	width: 0.1rem;height: 0.1rem;margin: 0.05rem 0.05rem 0 0;
+}
+.m_nav .middle span,
+.m_nav .exit span,
+.m_nav .modify_password span{
+	font-size: 0.08rem;line-height: 0.2rem;color: #fff;font-style: normal;
+}
+.m_nav .middle span,
+.m_nav .modify_password span{
+	border-right: solid 1px #45c5ff;padding-right: 0.05rem;
+}
+.m_nav .middle span i{
+	font-size: 0.08rem;line-height: 0.2rem;color: #fff;font-style: normal;margin: 0;
+}
+.m_nav .exit span:hover{
+	color: red;
+}
+.m_nav .middle input{
+	width: 1.5rem;height: 0.2rem;line-height:0.2rem;padding: 0 0.05rem 0 0.2rem;border: solid 1px #45c5ff;background-color: transparent;font-size: 0.1rem;color:#fff;margin-right: 0.1rem;
+}
+.m_nav .search{
+	position: relative;
+}
+.m_nav .search img{
+	position: absolute;left: 0.05rem;top: 0;
+}
+/* 弹框 */
+.bounce{
+	width: 100%;position: absolute;top: 0;bottom: 0;overflow: hidden;z-index: 9999;
+}
+.bounce .black_bg{
+	height: 100%;background: rgba(0,0,0,0.3);
+}
+.bounce .white_bg{
+	width: 25%;height: 40%;background: #fff;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);border-radius: 0.05rem;
+}
+.bounce .white_bg > p{
+	color: #fff;line-height: 0.3rem;font-size: 0.12rem;border-radius: 0.05rem 0.05rem 0 0;padding: 0 0.1rem;
+}
+.bounce .white_bg .tip{
+	width: 100%;position: absolute;top: 0;bottom: 10%;margin: 0.3rem 0 0.24rem 0;padding:0.1rem;overflow-x: hidden;overflow-y: auto;
+}
+.bounce .white_bg .tip span{
+	font-size: 0.1rem;line-height: 1.5;text-align: center;padding: 0.06rem 0;
+}
+.bounce .white_bg > input{
+	width: 90%;color: #fff;line-height: 0.24rem;font-size: 0.12rem;text-align: center;position: absolute;left: 5%;bottom: 10%;border: none;
+}
+/* 成功弹框颜色 */
+.success_bounce .white_bg > p{
+	background: rgb(92,184,92);
+}
+.success_bounce .white_bg .tip i{
+	color: rgb(92,184,92);
+}
+.success_bounce .white_bg > input{
+	background: rgb(92,184,92);
+}
+/* 失败弹框颜色 */
+.failure_bounce .white_bg > p{
+	background: rgb(217,83,79);
+}
+.failure_bounce .white_bg .tip i{
+	color: rgb(217,83,79);
+}
+.failure_bounce .white_bg > input{
+	background: rgb(217,83,79);
+}
+/* 警告弹框颜色 */
+.warn_bounce .white_bg > p{
+	background: rgb(240,173,78);
+}
+.warn_bounce .white_bg .tip i{
+	color: rgb(240,173,78);
+}
+.warn_bounce .white_bg > input{
+	background: rgb(240,173,78);
+}
+table{
+	border-collapse: collapse;width: 100%;background: #fff;
+}
+table th,
+table td{
+	border: solid 1px #ddd;font-size: 0.08rem;text-align: center;line-height: 1.5;
+}
+table th{
+	background: #efefef;padding: 0.02rem 0;
+}
+table tr:nth-child(even){
+	background-color: #f8f8f8;
+}
+table input{
+	font-size: 0.08rem;line-height: 1.5;background: #00a0e9;color: #fff;text-align: center;border: none;display: inline-block;margin: 0.01rem auto;padding: 0 0.1rem;
+}
+table tr.checked{
+	background-color: #dbe8ee;
+}
+/* 切换标签 */
+.tab_nav{
+	height: 0.15rem;background-color: #fff;padding: 0 0.1rem;border-bottom: solid 1px #ddd;
+}
+.tab_nav li{
+	margin-right: 0.1rem;
+}
+.tab_nav img{
+	width: 0.08rem;height: 0.08rem;margin: 0.035rem 0;
+}
+.tab_nav span{
+	font-size: 0.04rem;line-height: 0.15rem;color: #999;margin-left: 0.03rem;
+}
+.tab_nav li img:first-child,
+.tab_nav li.checked img:nth-child(2){
+	display: none;
+}
+.tab_nav li.checked img:first-child{
+	display: block;
+}
+.tab_nav li.checked span{
+	color: #00a0e9;
+}
+/* 标题 */
+.page_title{
+	padding: 0.05rem;border-bottom: solid 1px #ddd;border-top: solid 1px #ddd;
+}
+.page_title span{
+	font-size: 0.08rem;font-weight: bold;line-height: 1.5;border-left: 4px solid #84C43E;float: left;padding: 0 0.03rem;
+}
+/* 查询条件 */
+.query_condition{
+	background-color: #fff;padding:0.025rem 0.05rem;
+}
+.query_condition .tel,
+.query_condition .time{
+	float: left;position: relative;
+}
+.query_condition .download{
+	float: right;
+}
+.query_condition .download i,
+.query_condition .download span{
+	float: left;font-size: 0.08rem;position: inherit!important;line-height: 2;
+}
+.query_condition .download i{
+	margin-right: 0.05rem;
+}
+.query_condition label,
+.query_condition input,
+.query_condition .btn,
+.query_condition i{
+	float: left;font-size: 0.08rem;line-height: 2;height: 0.16rem;margin-right: 0.1rem;
+}
+.query_condition label{
+	width: 0.5rem;
+}
+.query_condition input{
+	width: 1rem;border: solid 1px #eee;padding: 0 0.05rem 0 0.15rem;
+}
+.query_condition .btn{
+	background-color: #00a0e9;color: #fff;padding: 0 0.2rem;
+}
+.query_condition i{
+	position: absolute;left: 0.65rem;
+}
+/* 上一页、下一页 */
+.up_down_page{
+	margin: 0.03rem 0;padding: 0.05rem 0.1rem;background-color: #fff;
+}
+.up_down_page span{
+	float: right;font-size: 0.08rem;line-height: 1.5;
+}
+.up_down_page .fa{
+	margin: 0 0.05rem;
+}
+.up_down_page input{
+	width: 0.3rem;float: right;height: .12rem;margin:0 0.05rem;padding: 0 0.02rem;text-align: center;border: solid 1px #ddd;
+}
+/* 必填项标记 */
+.necessary{
+	font-size: 0.08rem;color: red;float: left;line-height: .15rem;margin-left: 0.05rem;
+}
+/* 操作按钮 */
+.operate_btn{
+	padding: 0.05rem 0;
+}
+.operate_btn .border{
+	border: solid 1px #ddd;float: left;margin-right: 0.1rem;padding: 0 0.1rem;
+}
+.operate_btn i,
+.operate_btn span{
+	float: left;position: inherit !important;font-size: 0.08rem !important;line-height: 0.2rem;
+}
+.operate_btn i{
+	margin-right: 0.02rem;
+}
+/* 蓝色字体 */
+.blue_font{
+	color: blue !important;
+}
+/* 红色字体 */
+.red_font{
+	color: red !important;
+}
+
+/* 登录页 */
+.login_page{
+	width: 100%;position: absolute;top: 0;bottom: 0;overflow: hidden;background: linear-gradient(180deg, rgba(19, 125, 165, 1) 0%, rgba(19, 125, 165, 1) 0%, rgba(5, 98, 132, 1) 100%, rgba(5, 98, 132, 1) 100%);
+}
+.login_page .content{
+	padding: 0.1rem;height: 100%;
+}
+/* 登录框 */
+.login_page .content .log_box{
+	width: 40%;border: solid 0.05rem rgb(135, 186, 206);background-color: #fff;position:absolute;left:50%;top:50%;transform: translate(-50%,-50%);
+}
+/* 登录框标题 */
+.login_page .content .log_box .title{
+	border-bottom: solid 1px #ddd;padding: 0.1rem 0;
+}
+.login_page .content .log_box .title img,
+.login_page .content .log_box .title span{
+	float: left;
+}
+.login_page .content .log_box .title img{
+	width: 0.32rem;height: 0.2rem;margin:0 0.1rem 0 0.05rem;
+}
+.login_page .content .log_box .title span{
+	font-size: 0.14rem;line-height: 0.2rem;
+}
+/* 输入区 */
+.login_page .content .log_box form > img,
+.login_page .content .log_box form > ul{
+	float: left;
+}
+.login_page .content .log_box form > img{
+	width: 26%;height: 0.7rem;margin-top: 0.02rem;
+}
+.login_page .content .log_box form > ul{
+	width: 74%;
+}
+.login_page .content .log_box li{
+	margin: 0.1rem 0;
+}
+.login_page .content .log_box label,
+.login_page .content .log_box input{
+	float: left;
+}
+.login_page .content .log_box label{
+	width: 35%;font-size: 0.12rem;line-height: 0.2rem;padding: 0 0.1rem;
+}
+.login_page .content .log_box input{
+	width: 60%;height: 0.2rem;font-size: 0.1rem;border: solid 1px #ddd;padding: 0 0.1rem;
+}
+/* 登录按钮 */
+.login_page .content .log_box .log_btn{
+	width: 90%;height: 0.3rem;font-size: 0.14rem;line-height: 0.3rem;text-align: center;background-color: rgba(22, 155, 213, 1);color: #fff;margin: 0.1rem 5%;
+}
+.login_page .content .log_box .log_btn:hover{
+	background-color: #007bb1;
+}
+/* 记住密码、忘记密码 */
+.login_page .content .log_box .operate{
+	padding: 0 0.1rem;margin-bottom: 0.1rem;
+}
+.login_page .content .log_box .operate .left,
+.login_page .content .log_box .operate .left div,
+.login_page .content .log_box .operate .left span{
+	float: left;
+}
+.login_page .content .log_box .operate .right{
+	float: right;color: #00a0e9;
+}
+.login_page .content .log_box .operate .left span,
+.login_page .content .log_box .operate .right{
+	font-size: 0.1rem;line-height: 0.15rem;
+}
+.login_page .content .log_box .operate .left div{
+	width: 0.15rem;height: 0.15rem;border: solid 1px #ddd;margin-right: 0.05rem;position: relative;
+}
+.login_page .content .log_box .operate .left div.checked:before{
+	content: "√";font-size: 0.1rem;position: absolute;left: 0.02rem;top: 0.01rem;
+}
+
+/* 首页内容区 */
+.page{
+	width: 100%;position: absolute;top: 0.4rem;bottom: 0;overflow-y: auto;overflow-x: hidden;background: #fff;
+}
+.index_cont{
+	padding: 0 0.03rem;
+}
+.index_cont ul{
+	perspective: 800px;
+}
+.index_cont li{
+	width: 16.6666667%;float: left;margin-top:0.03rem;
+}
+.index_cont li .exchange_box{
+	padding: 0 0.015rem;
+}
+.index_cont li .exchange_box > div{
+	border: solid 1px #ddd;height:100%;
+}
+.index_cont li .exchange_box:nth-child(1) div{
+	background: rgba(255,255,255,1);
+}
+.index_cont li .exchange_box:nth-child(2) div{
+	background: rgba(0,0,0,0.3);
+}
+.index_cont li .exchange_box p{
+	font-size: 0.08rem;text-align: center;margin-top: 0.1rem;line-height: 1.5;
+}
+.index_cont li .exchange_box img{
+	width: 0.3rem;height: 0.3rem;margin: 0.1rem auto;
+}
+.index_cont .down_arrow{
+	width: 0.15rem;height: 0.15rem;position: absolute;right: 0.05rem;top: 0.05rem;margin: 0;
+}
+
+/* Redis应用内容区 */
+.redis_cont{
+	background: #908;color: #fff;
+}
+
+/* memchace应用内容区 */
+.memchace_cont{
+	background: #428;color: #fff;
+}
+
+/* db应用内容区 */
+.db_cont{
+	background: #e65ca5;color: #fff;
+}
+
+/* 用户管理内容区 */
+.user_manage_cont .nav{
+	padding: 0 0.1rem;background: #fff;border-bottom: solid 1px #ddd;border-top: solid 1px #ddd;
+}
+.user_manage_cont .nav label,
+.user_manage_cont .nav input{
+	float: left;font-size: 0.08rem;line-height: 0.15rem;height:0.15rem;margin: 0.03rem 0;
+}
+.user_manage_cont .nav input{
+	border: solid 1px #ddd;padding: 0 0.03rem;margin-right: 0.1rem;width: 0.8rem;
+}
+.user_manage_cont .nav input[type=button]{
+	width: 0.5rem;font-size: 0.08rem;line-height: 1.5;background: #00a0e9;color: #fff;border: none;display: inline-block;
+}
+/* 新增弹框内容 */
+.newAdd_bounce .white_bg,
+.log_manage_cont .white_bg{
+	width: 80%;height: 90%;
+}
+/**/
+.newAdd_bounce .white_bg .title{
+	font-size: 0.10rem;line-height: 0.20rem;height: 0.20rem;background-color: #00a0e9;color: #fff;padding: 0 0.1rem;border-radius: 0.05rem 0.05rem 0 0;
+}
+.newAdd_bounce .white_bg i{
+	font-size: 0.14rem;position: absolute;right: 0.05rem;top: 0.03rem;color: #fff;
+}
+.newAdd_bounce .white_bg ul{
+	width: 100%;position: absolute;top: 0.2rem;bottom: 0.2rem;overflow-x: hidden;overflow-y: auto;
+}
+.newAdd_bounce .white_bg li{
+	padding: 0.03rem 0;
+}
+.newAdd_bounce .white_bg label,
+.newAdd_bounce .white_bg input,
+.newAdd_bounce .white_bg select{
+	float: left;font-size: 0.08rem;line-height: .15rem;height: .15rem ;
+}
+.newAdd_bounce .white_bg label{
+	width: 20%;text-align: center;padding: 0 0.2rem;
+}
+.newAdd_bounce .white_bg input,
+.newAdd_bounce .white_bg select{
+	width: 40%;border: solid 1px #ddd;padding: 0 0.05rem;background-color: #fff;
+}
+.newAdd_bounce .white_bg textarea{
+	width: 40%;border: solid 1px #ddd;height: 0.8rem;padding: 0.05rem;resize: none;float: left;
+}
+.newAdd_bounce .white_bg li ul{
+	width: 80%;float: left;position: inherit;
+}
+.newAdd_bounce .white_bg li ul li:after{
+	clear:both; content:""; display:block; height:0;
+}
+.newAdd_bounce .white_bg li ul li{
+	float: left;margin-right: 0.05rem;
+}
+.newAdd_bounce .white_bg li ul li label,
+.newAdd_bounce .white_bg li ul li input,
+.newAdd_bounce .white_bg li ul li span{
+	float: left;font-size: 0.08rem;line-height: 1.5;
+}
+.newAdd_bounce .white_bg li ul li input[type=checkbox]{
+	width: 0.08rem;height: 0.08rem;margin: 0.02rem 0;
+}
+.newAdd_bounce .white_bg .btn_box{
+	width: 100%;position: absolute;left: 0;bottom: 0;background-color: #f7f7f7;padding: 0.02rem 0;border-top: solid 1px #ddd;
+}
+.newAdd_bounce .white_bg .btn_box input{
+	display: inline-block;float: left;width: 20%;height: 0.16rem;line-height: 0.16rem;font-size: 0.1rem;background-color: #efefef;border: none;
+}
+.newAdd_bounce .white_bg .btn_box input:first-child{
+	background-color: #00a0e9;color: #fff;margin: 0 30% 0 15%;
+}
+.newAdd_bounce .white_bg .apply_cont .apply_type{
+	padding: 0.05rem 0;background-color: #f7f7f7;
+}
+.newAdd_bounce .white_bg .apply_cont .apply_type label{
+	width: auto;padding: 0 0.1rem;
+}
+.newAdd_bounce .white_bg .apply_cont ul{
+	padding: 0 0.1rem;position: absolute;top: 0.45rem;bottom: 0.2rem;
+}
+.newAdd_bounce .white_bg .apply_cont .type_title{
+	border-left: solid 4px #00a0e9;padding: 0 0.1rem;background-color: #f7f7f7;border-bottom: solid 1px #ddd;
+}
+.newAdd_bounce .white_bg .apply_cont .type_title img,
+.newAdd_bounce .white_bg .apply_cont .type_title p{
+	float: left;font-size: 0.08rem;line-height: 1.5;
+}
+.newAdd_bounce .white_bg .apply_cont .type_title img{
+	width: 0.1rem;height: 0.1rem;margin-top: 0.01rem;margin-right: 0.05rem;
+}
+
+.newAdd_bounce .white_bg .apply_cont table input{
+	width: 100%;height:0.15rem;font-size: 0.08rem;line-height: 1.5;text-align: center;border: none;color: #333;
+}
+.newAdd_bounce .white_bg .apply_cont table input[type=checkbox]{
+	width: 0.1rem;height: 0.1rem;border: solid 1px #ddd;margin-left:0.05rem;
+}
+/* 文件夹开合 */
+.newAdd_bounce .switch{
+	width: 80%;float: left;
+}
+.switch li{
+	float: none !important;padding: 0.08rem 0 0 0 !important;margin: 0 !important;
+}
+.switch i,
+.switch input,
+.switch span{
+	float: left;font-size: 0.08rem !important;height:0.15rem;line-height:0.15rem!important;color: #333 !important;position: inherit !important; margin: 0 0.03rem;
+}
+.switch input{
+	width: 0.1rem; height: 0.1rem;margin: 0.025rem 0.03rem;
+}
+.switch .relative{
+	position: relative;width: 0.1rem;float: left;
+}
+.switch .relative i{
+	position: absolute;left: 0;top: 0;
+}
+/* 文件夹图标颜色 */
+.switch .fa-folder-open{
+	color: orange !important;
+}
+.switch li > ul{
+	padding: 0 0.05rem;
+}
+
+/* 角色管理内容区 */
+.role_manage_cont{
+	background: #cf9ae6;color: #fff;
+}
+
+/* 应用管理内容区 */
+.apply_manage_cont{
+	background: #38e65e;color: #fff;
+}
+
+/* 日志管理内容区 */
+.log_manage_cont .nav{
+	padding: 0 0.1rem;background: #fff;border-bottom: solid 1px #ddd;border-top: solid 1px #ddd;
+}
+.log_manage_cont .nav label,
+.log_manage_cont .nav input{
+	float: left;font-size: 0.08rem;line-height: 0.15rem;height:0.15rem;margin: 0.03rem 0;
+}
+.log_manage_cont .nav input{
+	border: solid 1px #ddd;padding: 0 0.03rem;margin-right: 0.1rem;width: 0.8rem;
+}
+.log_manage_cont .nav input[type=button]{
+	width: 0.5rem;font-size: 0.08rem;line-height: 1.5;background: #00a0e9;color: #fff;border: none;display: inline-block;
+}
+
+/* 单点登录内容区 */
+.single_point_cont{
+	background: #e66b00;color: #fff;
+}
+
+/* 数据库页面 */
+.data_page{
+	width: 100%;position: absolute;top: 0;bottom: 0;background-color: #f8f8f8;overflow: hidden;
+}
+.data_page .side_bar{
+	width: 15%;position: absolute;top: 0;bottom: 0;left: 0;overflow-y: auto;overflow-x: hidden;border: solid 1px #ddd;background-color: #fff;
+}
+.data_page .side_bar i,
+.data_page .side_bar span{
+	float: left;font-size: 0.08rem;line-height: 1.5;
+}
+.data_page  .page_content{
+	width: 85%;position: absolute;top: 0;bottom: 0;left: 15%;overflow: hidden;padding: 0 5px;font-size: 0.08rem;line-height: 1.5;
+}
+.data_page  .page_content .top,
+.data_page  .page_content .bottom{
+	height: 48%;padding: 2px 0;
+}
+.data_page  .page_content .middle{
+	height: 4%;padding: 2px 0;
+}
+.data_page  .page_content .top .content,
+.data_page  .page_content .bottom .content{
+	height: 100%;border: solid 1px #ddd;background-color: #fff;overflow: auto;
+}
+.data_page  .page_content .middle select,
+.data_page  .page_content .middle input{
+	float: left;margin-right: 0.05rem;
+}
+.data_page  .page_content .middle > div p,
+.data_page  .page_content .middle > div input{
+	float: left;
+}
+
+/* 无权访问页面 */
+.no_right_page .content{
+	position: absolute;width: 100%;top: 0;bottom: 0;overflow: hidden;background-color: #fff;
+}
+.no_right_page img{
+	width: 1.5rem;height: 1.5rem;margin: 0.3rem auto;
+}
+.no_right_page p{
+	font-size: 0.1rem;text-align: center;
+}
+/*日志管理页面的table表格*/
+.log_manage_cont .log-table{
+	margin-top: 3px;
+}
+
+/*类型5下面的标头*/
+li form .grouping-sele{
+	padding: 5px 10px;
+	background-color: #f7f7f7;
+	border-bottom: solid 1px #ddd;
+}
+.grouping-sele .grouping-label{
+	font-size: 14px;
+	float: left;
+	line-height: 27px;
+}
+.grouping-sele select{
+	margin-left: 3.5%
+}
+li form .grouping-sele span{
+	background-color: #00a0e9;
+	color: white;
+	float: left;
+	font-size: 14px;
+	border-radius: 3px;
+	line-height: 27px;
+	padding: 0 8px;
+	margin-left: 6%;
+}
+/*新增分组小弹框的样式*/
+.newAdd_bounce .white_width{
+	width: 40%;
+	height: 45%;
+}
+.newAdd_bounce .white_bg .padding_none{
+	padding: 0 3px;
+	text-align: right;
+}
+.newAdd_bounce .position_padding{
+	padding-left: 20%!important;
+}
+/* jvmcache内容区 */
+.tabs:after,
+.conten_jvmcache:after,
+.inqurie_bot:after,
+.jvmcache_cont:after{ height: 0; content: ""; clear: both; display: block;}
+.page .jvmcache_cont{
+	width: 100%;
+}
+.jvmcache_cont .inqurie_bot{
+	padding: 0 0.1rem;
+	background: #fff;
+	border-bottom: solid 1px #ddd;
+	border-top: solid 1px #ddd;
+}
+.inqurie_bot .select_boss{
+	float: left;
+}
+.select_boss .select_01,.input_01{
+	font-size: 0.08rem;
+	line-height: 0.15rem;
+	height: 0.15rem;
+	margin: 0.03rem;
+	border: #e4e4e4 solid 1px;
+}
+.select_boss .input_01{
+	margin-left: 20px;
+	padding: 0 5px;
+}
+.select_boss .input_02{
+	float: left;
+	margin: 0.03rem;
+	width: 0.5rem;
+	font-size: 0.08rem;
+	line-height: 2;
+	background: #00a0e9;
+	color: #fff;
+	border: none;
+}
+.jvmcache_cont .conten_jvmcache{
+	margin-top: 10px;
+	border-top: #3bd2df solid 1px;
+}
+.conten_jvmcache .left_jvmcache{
+	width: 35%;
+	padding: 3px;
+	float: left;
+	position: relative;
+}
+.right_jvmcache .bule-top,
+.left_jvmcache .bule-top{
+	height: 35px;
+	background-color: #8ae7e9;
+	border: #17c7df solid 1px;
+}
+.bule-top .tabs{
+	position: relative;
+	width: 92px;
+	float: left;
+}
+.tabs .tab-01{
+	float: left;
+	font-size: 12px;
+	cursor: pointer;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 9px;
+	background-color: #ffffff!important;
+	border-radius: 3px 3px 0 0;
+	margin-left: 5px;
+	width: 90px;
+	text-align: left;
+	padding-left: 20px;
+}
+.tabs .fa{
+	font-size: 12px;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+.left_jvmcache .jvmc_table{
+	min-height:480px;
+	border: #dfdfdf solid 1px;
+	border-collapse: collapse;
+	overflow-y:auto;
+	overflow-x:hidden;
+	bottom:5px;
+	position: absolute;
+	top: 35px;
+	width: 99%;  
+}
+.left_jvmcache .jvmc_table .table_01{
+}
+.table_01 td{
+	padding: 5px;
+	border: none;
+
+}
+.conten_jvmcache .right_jvmcache{
+	width: 65%;
+	padding: 3px;
+	float: left;
+	position: relative;
+}
+.right_jvmcache .jvmc_text{
+	border: #dfdfdf solid 1px;
+	min-height:480px;
+	overflow-y:auto;
+	overflow-x:hidden ;
+	bottom:5px;
+	position: absolute;
+	top: 35px;
+	width: 99%;
+}
+.last .radio_box{
+   width: 15px!important;
+   height: 15px!important;
+   margin-left: 5px!important;
+}
+.last .file{padding-left: 3px!important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

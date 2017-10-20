@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AIConfig>
+    <ConfigKind name="AppFrameInit">
+        <ConfigItem name="CHARSET" remarks="字符集(BO,SET等等配置文件读取编码方式)" >utf-8</ConfigItem>
+        <ConfigItem name="IdGeneratorClass" remarks="数据对象唯一标识管理器实现类" >com.ai.appframe2.complex.tab.id.AdvanceIdGeneratorImpl</ConfigItem>
+         <ConfigItem name="DataStoreClass" remarks="数据存储管理器实现类" >com.ai.appframe2.complex.tab.store.AdvanceDataStoreImpl</ConfigItem>
+    </ConfigKind>
+    <ConfigKind name="AppFrameLocale" remarks="语言属性设置">
+        <ConfigItem name="LOCALE" remarks="国际化" >zh_CN</ConfigItem>
+        <ConfigItem name="LOCALE_FIXED" remarks="固定国际化(不采用web或客户端传入的语言)" >true</ConfigItem>
+    </ConfigKind>
+</AIConfig>

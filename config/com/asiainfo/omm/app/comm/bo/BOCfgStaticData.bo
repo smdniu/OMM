@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base_aiop" name="BOCfgStaticData" mainattr="CODE_TYPE">
+    <mapingenty type="table">CFG_STATIC_DATA</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CODE_TYPE" maxlength="255" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CODE_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CODE_VALUE" maxlength="255" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CODE_VALUE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CODE_NAME" maxlength="255" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CODE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CODE_DESC" maxlength="255" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CODE_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CODE_TYPE_ALIAS" maxlength="255" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CODE_TYPE_ALIAS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SORT_ID" maxlength="3" datatype="Integer" type="COL">
+        <mapingcol datatype="NUMBER">SORT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXTERN_CODE_TYPE" maxlength="2000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXTERN_CODE_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>
